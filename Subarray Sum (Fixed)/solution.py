@@ -1,7 +1,7 @@
 def subarray_sum_fixed(nums: list[int], k: int) -> int:
     window_sum = 0
     for num in range(k):
-        window_sum += num
+        window_sum += nums[num]
     ans = window_sum
     
     for right in range(k, len(nums)):
@@ -10,3 +10,4 @@ def subarray_sum_fixed(nums: list[int], k: int) -> int:
         window_sum += nums[right]
         ans = max(ans, window_sum)
     return ans
+    
