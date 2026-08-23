@@ -1,7 +1,7 @@
-### Data Structures and Algorithms
+# Data Structures and Algorithms
 A collection of data structures and algorithm problems implemented in Python.
 
-### Problems
+## Problems
 ### Subarray Sum (Fixed)
 Given an array `nums` containing only non-negative integers, find the largest sum among all contiguous subarrays of length `k`.
 
@@ -61,7 +61,7 @@ for num in range(k):
 ```
 With that correction, the sliding-window implementation correctly produces `14` for the example above.
 
-### Repository Structure
+## Repository Structure
 Each problem is organized in its own directory and contains:
 - `problem.md` — problem statement and examples.
 - `solution.py` — Python implementation of the solution.
