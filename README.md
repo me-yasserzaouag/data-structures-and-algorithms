@@ -46,21 +46,6 @@ Subarray Sum (Fixed)/
 └── solution.py
 ```
 
-#### Implementation Note
-The current solution.py contains a small initialization bug:
-```python
-for num in range(k):
-    window_sum += num
-```
-This adds the indices `0, 1, ..., k - 1` rather than the first `k` values from nums.
-
-It should be:
-```
-for num in range(k):
-    window_sum += nums[num]
-```
-With that correction, the sliding-window implementation correctly produces `14` for the example above.
-
 ## Repository Structure
 Each problem is organized in its own directory and contains:
 - `problem.md` — problem statement and examples.
